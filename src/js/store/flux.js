@@ -7,7 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			loadVehicles: [],
 			vehiclesDetail: {},
 			loadPlanets: [],
-			planetDetail: {}
+			planetsDetail: {}
 		},
 		actions: {
 			loadPeople: () => {
@@ -40,13 +40,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.catch(error => console.log("error", error));
 			},
-			planetDetail: uid => {
+			planetsDetail: uid => {
 				const store = getStore();
 				fetch("https://www.swapi.tech/api/planets/" + uid)
 					.then(response => response.json())
 					.then(result => {
-						setStore({ planetDetail: result.result.properties });
-						console.log("planetDetail", store.planetDetail);
+						setStore({ planetsDetail: result.result.properties });
+						console.log("planetsDetail", store.planetsDetail);
 					})
 					.catch(error => console.log("error", error));
 			},
