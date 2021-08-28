@@ -9,16 +9,42 @@ import fondo_naves from "../../img/fondo_naves.jpg";
 
 export const Home = () => (
 	<>
-		<div className="text-center mt-3">
-			<Link to="/characters">
-				<img src={fondo_personajes} style={{ marginLeft: "20px", width: "20%", height: "40%" }} />
-			</Link>
-			<Link to="/planets">
-				<img src={fondo_planetas} style={{ marginLeft: "20px", width: "20%", height: "40%" }} />
-			</Link>
-			<Link to="/vehicles">
-				<img src={fondo_naves} style={{ marginLeft: "20px", width: "20%", height: "40%" }} />
-			</Link>
+		<div className="container">
+			<div className="row">
+				<div className="col">
+					<Link to="/characters">
+						<div className="text-center">
+							<h2>Characters</h2>
+							<img
+								src={fondo_personajes}
+								style={{ marginLeft: "5px", marginBottom: "15px", marginTop: "10px" }}
+							/>
+						</div>
+					</Link>
+				</div>
+				<div className="col">
+					<Link to="/planets">
+						<div className="text-center">
+							<h2>Planets</h2>
+							<img
+								src={fondo_planetas}
+								style={{ marginLeft: "5px", marginBottom: "15px", marginTop: "10px" }}
+							/>
+						</div>
+					</Link>
+				</div>
+				<div className="col">
+					<Link to="/vehicles">
+						<div className="text-center">
+							<h2>Vehicles</h2>
+							<img
+								src={fondo_naves}
+								style={{ marginLeft: "5px", marginBottom: "15px", marginTop: "10px" }}
+							/>
+						</div>
+					</Link>
+				</div>
+			</div>
 		</div>
 	</>
 );

@@ -16,9 +16,10 @@ export const CardPlanets = () => {
 							<div className="card-body">
 								<h5 className="card-title">{planets.name}</h5>
 								<p className="card-text">
-									{planets.uid}
-									Some quick example text to build on the card title and make up the bulk of the cards
-									content.
+									{/* {planets.uid} */}
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+									veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 								</p>
 								<Link to={"/planetsdetail/" + planets.uid}>
 									<button className="btn btn-warning">Read more</button>
@@ -27,7 +28,7 @@ export const CardPlanets = () => {
 								<a href="#" className="btn btn-outline-warning float-right">
 									<i className="fas fa-heart text-warning" />
 								</a>
-								<button
+								{/* <button
 									onClick={() => {
 										alert(person.name);
 
@@ -35,7 +36,7 @@ export const CardPlanets = () => {
 										console.log("My store array Favourites: ", store.favourites);
 									}}>
 									Save
-								</button>
+								</button> */}
 							</div>
 						</div>
 					</div>

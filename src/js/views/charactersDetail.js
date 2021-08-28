@@ -12,12 +12,22 @@ export const CharactersDetail = () => {
 	}, []);
 
 	return (
-		<div>
-			<h1>Name: {store.personDetail.name}</h1>
-			<h1>Hair Color: {store.personDetail.hair_color}</h1>
-			<h1>Skin Color: {store.personDetail.skin_color}</h1>
-			<h1>Eye Color: {store.personDetail.eye_color}</h1>
+		<div className="text-center mt-5">
+			<h1>Name : {store.personDetail.name}</h1>
+			<h3>Hair Color : {store.personDetail.hair_color}</h3>
+			<h3>Skin Color : {store.personDetail.skin_color}</h3>
+			<h3>Eye Color : {store.personDetail.eye_color}</h3>
+			<h3>Height : {store.personDetail.height}</h3>
+			<h3>Birth Year : {store.personDetail.birth_year}</h3>
 			<img src={blond} style={{ marginLeft: "20px", width: "20%", height: "40%" }} />
+
+			<div className="text-center mt-5">
+				<Link to={"/characters"}>
+					<a href="#" className="btn btn-warning text-dark">
+						Back to Characters
+					</a>
+				</Link>
+			</div>
 		</div>
 	);
 };
