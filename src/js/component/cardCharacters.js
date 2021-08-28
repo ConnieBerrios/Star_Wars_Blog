@@ -20,7 +20,7 @@ export const CardCharacters = () => {
 									Some quick example text to build on the card title and make up the bulk of the cards
 									content.
 								</p>
-								<Link to={"./person/" + person.uid}>
+								<Link to={"/charactersdetail/" + person.uid}>
 									<a href="#" className="btn btn-warning text-dark">
 										Read more
 									</a>

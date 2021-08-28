@@ -3,10 +3,10 @@ import { useParams, Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 export const Planetsdetail = () => {
 	const { store, actions } = useContext(Context);
-	const params = useParams();
+	const { theid } = useParams();
 
 	useEffect(() => {
-		actions.planetsDetail(planetsid);
+		actions.planetsDetail(theid);
 	}, []);
 
 	return (
