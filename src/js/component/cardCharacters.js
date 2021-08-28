@@ -17,8 +17,7 @@ export const CardCharacters = () => {
 								<h5 className="card-title">{person.name}</h5>
 								<p className="card-text">
 									{person.uid}
-									Some quick example text to build on the card title and make up the bulk of the cards
-									content.
+									Aqui va la data
 								</p>
 								<Link to={"/charactersdetail/" + person.uid}>
 									<a href="#" className="btn btn-warning text-dark">

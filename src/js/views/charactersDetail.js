@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import blond from "../../img/blond.jpg";
 
-
 export const CharactersDetail  = () => {
 	const { store, actions } = useContext(Context);
 	const { theid } = useParams();
