@@ -1,7 +1,5 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
-
 import { Link } from "react-router-dom";
 import fondo_personajes from "../../img/fondo_personajes.jpg";
 import fondo_planetas from "../../img/fondo_planetas.jpg";
@@ -12,7 +10,9 @@ export const Home = () => (
 		<div className="container">
 			<div className="row">
 				<div className="col">
-					<Link to="/characters">
+					<Link
+						to="/characters"
+						style={{ color: "rgb(228, 182, 31)", textDecorationColor: "rgb(228, 182, 31)" }}>
 						<div className="text-center">
 							<h2>Characters</h2>
 							<img
@@ -23,9 +23,11 @@ export const Home = () => (
 					</Link>
 				</div>
 				<div className="col">
-					<Link to="/planets">
+					<Link
+						to="/planets"
+						style={{ color: "rgb(228, 182, 31)", textDecorationColor: "rgb(228, 182, 31)" }}>
 						<div className="text-center">
-							<h2>Planets</h2>
+							<h2>Planets </h2>
 							<img
 								src={fondo_planetas}
 								style={{ marginLeft: "5px", marginBottom: "15px", marginTop: "10px" }}
@@ -34,7 +36,9 @@ export const Home = () => (
 					</Link>
 				</div>
 				<div className="col">
-					<Link to="/vehicles">
+					<Link
+						to="/vehicles"
+						style={{ color: "rgb(228, 182, 31)", textDecorationColor: "rgb(228, 182, 31)" }}>
 						<div className="text-center">
 							<h2>Vehicles</h2>
 							<img

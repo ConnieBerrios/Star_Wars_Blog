@@ -5,7 +5,9 @@ import { CardCharacters } from "../component/cardCharacters";
 
 export const Characters = () => (
 	<>
-		<h2 className="my-2 text-light text-center">Star-Wars Characters</h2>
+		<h2 id="titulo1" className="my-2 text-light text-center">
+			Star Wars Characters
+		</h2>
 		<div className="container-fluid scrolling-wrapper">
 			<div className="row d-flex flex-nowrap">
 				<CardCharacters />

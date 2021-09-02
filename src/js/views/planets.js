@@ -5,7 +5,9 @@ import { CardPlanets } from "../component/cardPlanets";
 
 export const Planets = () => (
 	<>
-		<h2 className="my-2 text-light text-center">Star-Wars Planets </h2>
+		<h2 id="titulo2" className="my-2 text-light text-center">
+			Star Wars Planets{" "}
+		</h2>
 		<div className="container-fluid scrolling-wrapper">
 			<div className="row d-flex flex-nowrap">
 				<CardPlanets />

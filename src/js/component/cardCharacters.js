@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/home.scss";
+import blond from "../../img/blond.jpg";
 
 export const CardCharacters = () => {
 	const { store, actions } = useContext(Context);
@@ -17,6 +18,7 @@ export const CardCharacters = () => {
 								<h5 className="card-title">{person.name}</h5>
 								<p className="card-text">
 									{/* {person.uid} */}
+									<img src={blond} style={{ marginLeft: "20px", width: "88%", height: "100%" }} />
 									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
 									veritatis et quasi architecto beatae vitae dicta sunt explicabo.

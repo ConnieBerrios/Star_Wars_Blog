@@ -5,7 +5,7 @@ import { CardVehicles } from "../component/cardVehicles";
 
 export const Vehicles = () => (
 	<>
-		<h2 className="my-2 text-light text-center">Star-Wars Vehicles</h2>
+		<h2 className="my-3 text-light text-center">Star Wars Vehicles</h2>
 		<div className="container-fluid scrolling-wrapper">
 			<div className="row d-flex flex-nowrap">
 				<CardVehicles />

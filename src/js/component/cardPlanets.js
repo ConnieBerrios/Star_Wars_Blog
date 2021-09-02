@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/home.scss";
+import blond from "../../img/blond.jpg";
 
 export const CardPlanets = () => {
 	const { store, actions } = useContext(Context);
@@ -16,6 +17,7 @@ export const CardPlanets = () => {
 							<div className="card-body">
 								<h5 className="card-title">{planets.name}</h5>
 								<p className="card-text">
+									<img src={blond} style={{ marginLeft: "20px", width: "88%", height: "100%" }} />
 									{/* {planets.uid} */}
 									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
