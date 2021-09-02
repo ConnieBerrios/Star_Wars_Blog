@@ -12,7 +12,7 @@ export const VehiclesDetail = () => {
 	}, []);
 
 	return (
-		<div className="text-center mt-5">
+		<div className="text-center mt-5" style={{ color: "rgba(102, 96, 96, 0.938" }}>
 			<h1>Name : {store.vehiclesDetail.name}</h1>
 			<h3>Model : {store.vehiclesDetail.model}</h3>
 			<h3>Manufacturer : {store.vehiclesDetail.manufacturer}</h3>
