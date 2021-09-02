@@ -22,7 +22,7 @@ export const CardPlanets = () => {
 									veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 								</p>
 								<Link to={"/planetsdetail/" + planets.uid}>
-									<button className="btn btn-warning">Read more</button>
+									<button className="btn btn-warning">More Info</button>
 								</Link>
 
 								<a href="#" className="btn btn-outline-warning float-right">

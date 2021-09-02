@@ -23,7 +23,7 @@ export const CardVehicles = () => {
 								</p>
 								<Link to={"./vehicles/" + vehicles.uid}>
 									<a href="#" className="btn btn-warning text-dark">
-										Read more
+										More Info
 									</a>
 								</Link>
 

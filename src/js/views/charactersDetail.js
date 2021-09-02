@@ -12,7 +12,7 @@ export const CharactersDetail = () => {
 	}, []);
 
 	return (
-		<div className="text-center mt-5">
+		<div id="divDetalle" className="text-center mt-5">
 			<h1>Name : {store.personDetail.name}</h1>
 			<h3>Hair Color : {store.personDetail.hair_color}</h3>
 			<h3>Skin Color : {store.personDetail.skin_color}</h3>

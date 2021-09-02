@@ -1,13 +1,10 @@
 body{
-    background-color:#343a40;
-    //overflow-y: hidden;
+    background-color:#1b1c1d;
 }
 
 .scrolling-wrapper{
     overflow-x: auto;
-      scroll-margin-top: 3px;
-
-
+    scroll-margin-top: 3px;
 }
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -16,7 +13,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: orange;
+  background-color: rgb(228, 182, 31);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -25,5 +22,9 @@ body{
 }
 
 h2 {
-    color: rgb(219, 185, 30);
+    color: rgb(228, 182, 31);
+}
+
+Footer {
+    color: white;
 }
