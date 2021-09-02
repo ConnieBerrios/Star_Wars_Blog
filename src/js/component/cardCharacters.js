@@ -30,7 +30,12 @@ export const CardCharacters = () => {
 								</Link>
 
 								<a href="#" className="btn btn-outline-warning float-right">
-									<i className="fas fa-heart text-warning" />
+									<i
+										className="fas fa-heart text-warning"
+										onClick={() => {
+											actions.getFavorites(person.name);
+										}}
+									/>
 								</a>
 								{/* <button
 									onClick={() => {

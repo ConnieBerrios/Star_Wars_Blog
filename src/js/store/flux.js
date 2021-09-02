@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			//favourites: [],
+			favorites: [],
 			loadPeople: [],
 			personDetail: {},
 			loadVehicles: [],
@@ -69,6 +69,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("vehiclesDetail", store.vehiclesDetail);
 					})
 					.catch(error => console.log("error", error));
+			},
+
+			getFavorites: name => {
+				const store = getStore();
+				setStore({ favorites: [...store.favorites, name] });
+			},
+
+			deleteFavorites: posicion => {
+				const store = getStore();
+				const favoriteDeleted = store.favorites.filter(key => key !== posicion);
+				setStore({ favorites: favoriteDeleted });
 			}
 		}
 	};

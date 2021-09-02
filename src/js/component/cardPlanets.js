@@ -28,7 +28,12 @@ export const CardPlanets = () => {
 								</Link>
 
 								<a href="#" className="btn btn-outline-warning float-right">
-									<i className="fas fa-heart text-warning" />
+									<i
+										className="fas fa-heart text-warning"
+										onClick={() => {
+											actions.getFavorites(planets.name);
+										}}
+									/>
 								</a>
 								{/* <button
 									onClick={() => {
