@@ -20,8 +20,7 @@ export const CardCharacters = () => {
 									{/* {person.uid} */}
 									<img src={blond} style={{ marginLeft: "20px", width: "88%", height: "100%" }} />
 									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-									veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+									doloremque laudantium, totam rem aperiam.
 								</p>
 								<Link to={"/charactersdetail/" + person.uid}>
 									<a href="#" className="btn btn-warning text-dark">

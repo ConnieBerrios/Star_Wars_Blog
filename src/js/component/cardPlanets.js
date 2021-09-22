@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/home.scss";
-import blond from "../../img/blond.jpg";
+import planetsmeme from "../../img/planetsmeme.jpg";
 
 export const CardPlanets = () => {
 	const { store, actions } = useContext(Context);
@@ -17,11 +17,19 @@ export const CardPlanets = () => {
 							<div className="card-body">
 								<h5 className="card-title">{planets.name}</h5>
 								<p className="card-text">
-									<img src={blond} style={{ marginLeft: "20px", width: "88%", height: "100%" }} />
+									<img
+										src={planetsmeme}
+										style={{
+											marginLeft: "20px",
+											width: "88%",
+											height: "100%",
+											marginTop: "20px",
+											marginBottom: "20px"
+										}}
+									/>
 									{/* {planets.uid} */}
 									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-									veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+									doloremque laudantium, totam rem aperiam.
 								</p>
 								<Link to={"/planetsdetail/" + planets.uid}>
 									<button className="btn btn-warning">More Info</button>
@@ -35,15 +43,6 @@ export const CardPlanets = () => {
 										}}
 									/>
 								</a>
-								{/* <button
-									onClick={() => {
-										alert(person.name);
-
-										store.favourites.push(person.name);
-										console.log("My store array Favourites: ", store.favourites);
-									}}>
-									Save
-								</button> */}
 							</div>
 						</div>
 					</div>

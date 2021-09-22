@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import blond from "../../img/blond.jpg";
+import vehiclememe from "../../img/vehiclesmeme2.jpg";
 
 export const VehiclesDetail = () => {
 	const { store, actions } = useContext(Context);
@@ -12,37 +12,47 @@ export const VehiclesDetail = () => {
 	}, []);
 
 	return (
-		<div className="text-center mt-5" style={{ color: "rgba(102, 96, 96, 0.938" }}>
-			<h1>Name : {store.vehiclesDetail.name}</h1>
-			<h3>Model : {store.vehiclesDetail.model}</h3>
-			<h3>Manufacturer : {store.vehiclesDetail.manufacturer}</h3>
-			<h3>Length : {store.vehiclesDetail.length}</h3>
-			<h3>Vehicle Class : {store.vehiclesDetail.vehicle_class}</h3>
-			<h3>Max atmosphering speed : {store.vehiclesDetail.max_atmosphering_speed}</h3>
-			<img src={blond} style={{ marginLeft: "20px", width: "20%", height: "40%" }} />
-
-			<div className="text-center mt-5">
+		<>
+			<div className="text-center mt-5" style={{ color: "rgba(102, 96, 96, 0.938", alignContent: "center" }}>
+				<table className="table table-bordered table-dark">
+					<tbody>
+						<tr>
+							<th colSpan="2">
+								<img src={vehiclememe} style={{ margin: "20px", width: "60%", height: "100%" }} />
+							</th>
+						</tr>
+						<tr>
+							<th scope="row">Name </th>
+							<td>{store.vehiclesDetail.name}</td>
+						</tr>
+						<tr>
+							<th scope="row">Model</th>
+							<td>{store.vehiclesDetail.model}</td>
+						</tr>
+						<tr>
+							<th scope="row">Manufacturer</th>
+							<td>{store.vehiclesDetail.manufacturer}</td>
+						</tr>
+						<tr>
+							<th scope="row">Length</th>
+							<td>{store.vehiclesDetail.length}</td>
+						</tr>
+						<tr>
+							<th scope="row">Vehicle Class</th>
+							<td>{store.vehiclesDetail.vehicle_class}</td>
+						</tr>
+						<tr>
+							<th scope="row">Max Atmosphering Speed</th>
+							<td>{store.vehiclesDetail.max_atmosphering_speed}</td>
+						</tr>
+					</tbody>
+				</table>
 				<Link to={"/vehicles"}>
 					<a href="#" className="btn btn-warning text-dark">
 						Back to Vehicles
 					</a>
 				</Link>
 			</div>
-		</div>
+		</>
 	);
 };
-// "model": "Digger Crawler",
-//             "vehicle_class": "wheeled",
-//             "manufacturer": "Corellia Mining Corporation",
-//             "cost_in_credits": "150000",
-//             "length": "36.8 ",
-//             "crew": "46",
-//             "passengers": "30",
-//             "max_atmosphering_speed": "30",
-//             "cargo_capacity": "50000",
-//             "consumables": "2 months",
-//             "films": [],
-//             "pilots": [],
-//             "created": "2020-09-17T17:46:31.415Z",
-//             "edited": "2020-09-17T17:46:31.415Z",
-//             "name": "Sand Crawler",
